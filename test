@@ -1,0 +1,6 @@
+function (a, b, callback) {
+  //test workload
+  callback(null, a + b);
+}
+---
+[ 1, 2 ]

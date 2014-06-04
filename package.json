@@ -1,0 +1,10 @@
+{
+  "name": "sandbox-worker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "bin/worker",
+  "scripts": {
+  },
+  "author": "José F. Romaniello (jfromaniello@gmail.com) <http://joseoncode.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var workload_from_stdin = require('../workload_from_stdin');
+
+function end (err, result) {
+  console.log(JSON.stringify([err, result]));
+  process.exit(1);
+}
+
+workload_from_stdin.once('workload', function (workload) {
+  var args = workload.args.concat([end]);
+  workload.f.apply(null, args);
+});
